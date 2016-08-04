@@ -33,6 +33,7 @@ RUN apt-get install -y \
         g++ \
         git \
         apt-transport-https
+    && mozroots --import --sync
 
 RUN apt-get -y autoremove \
 	&& apt-get -y clean \
