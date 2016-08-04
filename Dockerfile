@@ -32,7 +32,7 @@ RUN apt-get install -y \
         build-essential \
         g++ \
         git \
-        apt-transport-https
+        apt-transport-https \
     && mozroots --import --sync
 
 RUN apt-get -y autoremove \
